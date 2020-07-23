@@ -12,7 +12,7 @@ public class ReservationMenu {
     public void runMenu() {
         int choice;
         do {
-            System.out.println("*-----Restaurant Reservation System-----*");
+            System.out.println("*-----Restaurant Reservation Application-----*");
             System.out.println("Please choose your options:");
             System.out.println("1) Reservations");
             System.out.println("2) Quit");

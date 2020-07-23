@@ -23,7 +23,7 @@ public class Customer {
         int minutes = Integer.parseInt(time.substring(3, 5));
 
         return !(time.charAt(2) != ':' || time.length() != 5
-                || hours > 24 || minutes > 50);
+                || hours > 24 || minutes > 59);
     }
 
     public void displayInfo() {
@@ -33,8 +33,8 @@ public class Customer {
         System.out.println("Customer Name:");
         setName(scanner.nextLine());
 
-        System.out.println("Reservation Time"
-                + " time [hh:mm continuous format]:");
+        System.out.println("Reservation"
+                + " time [hh:mm format ]  Example: 12:51 ]:");
         tempTime = scanner.nextLine();
         while (checkTime(tempTime) == false) 
         {
